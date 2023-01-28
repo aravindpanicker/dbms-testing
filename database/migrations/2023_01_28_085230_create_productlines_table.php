@@ -15,6 +15,9 @@ return new class extends Migration
     {
         Schema::create('productlines', function (Blueprint $table) {
             $table->id();
+            $table->string('productLine');
+            $table->string('textDescription');
+            $table->string('htmlDescription');
             $table->timestamps();
         });
     }
