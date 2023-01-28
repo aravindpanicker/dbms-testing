@@ -12,7 +12,7 @@
         <label for="customers">Customers Fields</label>
         <select name="customers" id="customers" class="form-control">
             <option value="">Select</option>
-            @foreach($table_attributes as $attribute)
+            @foreach($customers_attributes as $attribute)
                 <option value="{{$attribute}}">{{$attribute}}</option>
             @endforeach
         </select>
@@ -21,7 +21,7 @@
         <label for="employees">employee Name Field Name</label>
         <select name="employees" id="employees" class="form-control">
             <option value="">Select</option>
-            @foreach($table_attributes as $attribute)
+            @foreach($employees_attributes as $attribute)
                 <option value="{{$attribute}}">{{$attribute}}</option>
             @endforeach
         </select>
@@ -31,7 +31,7 @@
         <label for="offices">offices Name Field Name</label>
         <select name="offices" id="offices" class="form-control">
             <option value="">Select</option>
-            @foreach($table_attributes as $attribute)
+            @foreach($offices_attributes as $attribute)
                 <option value="{{$attribute}}">{{$attribute}}</option>
             @endforeach
         </select>
@@ -41,7 +41,7 @@
         <label for="orderdetails">orderdetails Field Name</label>
         <select name="orderdetails" id="offices" class="form-control">
             <option value="">Select</option>
-            @foreach($table_attributes as $attribute)
+            @foreach($orderdetails_attributes as $attribute)
                 <option value="{{$attribute}}">{{$attribute}}</option>
             @endforeach
         </select>
@@ -51,7 +51,7 @@
         <label for="orders">orders Field Name</label>
         <select name="orders" id="offices" class="form-control">
             <option value="">Select</option>
-            @foreach($table_attributes as $attribute)
+            @foreach($customers_attributes as $attribute)
                 <option value="{{$attribute}}">{{$attribute}}</option>
             @endforeach
         </select>
@@ -61,7 +61,7 @@
         <label for="payments">payments Field Name</label>
         <select name="payments" id="offices" class="form-control">
             <option value="">Select</option>
-            @foreach($table_attributes as $attribute)
+            @foreach($customers_attributes as $attribute)
                 <option value="{{$attribute}}">{{$attribute}}</option>
             @endforeach
         </select>
@@ -71,7 +71,7 @@
         <label for="productslines">productslines Field Name</label>
         <select name="productslines" id="offices" class="form-control">
             <option value="">Select</option>
-            @foreach($table_attributes as $attribute)
+            @foreach($customers_attributes as $attribute)
                 <option value="{{$attribute}}">{{$attribute}}</option>
             @endforeach
         </select>
@@ -80,7 +80,7 @@
         <label for="products">products Field Name</label>
         <select name="products" id="offices" class="form-control">
             <option value="">Select</option>
-            @foreach($table_attributes as $attribute)
+            @foreach($customers_attributes as $attribute)
                 <option value="{{$attribute}}">{{$attribute}}</option>
             @endforeach
         </select>
@@ -121,7 +121,7 @@
     <div class="form-group">
         <label for="fields">Fields to be shown in output table</label>
         <div class="checkbox">
-            @foreach($table_attributes as $attribute)
+            @foreach($customers_attributes as $attribute)
                 <label><input type="checkbox" name="fields[]" value="{{$attribute}}"> {{$attribute}}</label>
             @endforeach
         </div>
