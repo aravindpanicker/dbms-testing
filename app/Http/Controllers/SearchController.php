@@ -34,7 +34,6 @@ class SearchController extends Controller
     {
         $query = Customers::query();
 
-
         // Check if the product attribute is selected
         if ($request->has('customers_attribute')) {
             $query->where($request->customers_attribute, $request->customers_value);
