@@ -15,11 +15,11 @@ return new class extends Migration
     {
         Schema::create('orderdetails', function (Blueprint $table) {
             $table->id();
-            $table->integer('orderNumber');
-            $table->integer('productCode');
-            $table->integer('quantityOrdered');
-            $table->integer('priceEach');
-            $table->integer('orderLineNumber');
+            $table->integer('orderNumber')->nullable();
+            $table->string('productCode')->nullable();
+            $table->integer('quantityOrdered')->nullable();
+            $table->integer('priceEach')->nullable();
+            $table->integer('orderLineNumber')->nullable();
             $table->timestamps();
         });
     }
