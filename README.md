@@ -6,5 +6,8 @@ git pull origin main
 
 ## To Do List
 
-- [ ] Add fields to models
+
 - [ ] Make db seeder for each model
+
+##completed
+- [ ] Added fields to models
