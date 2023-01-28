@@ -15,19 +15,19 @@ return new class extends Migration
     {
         Schema::create('customers', function (Blueprint $table) {
             $table->id();
-            $table->integer('customernumber');
-            $table->string('customername');
-            $table->string('contactlastname');
-            $table->string('contactfirstname');
-            $table->integer('phone');
-            $table->string('addressline1');
-            $table->string('addressline2');
-            $table->string('city');
-            $table->string('state');
-            $table->integer('postalcode');
-            $table->string('country');
-            $table->integer('salesrepempnumber');
-            $table->integer('creditlimit');
+            $table->integer('customerNumber')->nullable();
+            $table->string('customerName')->nullable();
+            $table->string('contactLastName')->nullable();
+            $table->string('contactFirstName')->nullable();
+            $table->string('phone')->nullable();
+            $table->string('addressLine1')->nullable();
+            $table->string('addressLine2')->nullable();
+            $table->string('city')->nullable();
+            $table->string('state')->nullable();
+            $table->string('postalCode')->nullable();
+            $table->string('country')->nullable();
+            $table->integer('salesRepEmployeeNumber')->nullable();
+            $table->integer('creditLimit')->nullable();
             $table->timestamps();
 
         });
