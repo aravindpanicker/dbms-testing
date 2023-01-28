@@ -11,6 +11,7 @@ use App\Models\Orders;
 use App\Models\Payments;
 use App\Models\Productlines;
 use App\Models\Products;
+use DB;
 
 class SearchController extends Controller
 {
